@@ -10,15 +10,18 @@
         <array key="Segoe Script.ttf">
             <string>SegoeScript</string>
         </array>
+        <array key="Segoe UI Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
         <array key="Segoe UI.ttf">
             <string>SegoeUI</string>
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Launch View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LaunchViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,11 +71,24 @@
         <!--Order-->
         <scene sceneID="H9d-2s-ZSl">
             <objects>
-                <viewController id="JD4-dq-l3P" sceneMemberID="viewController">
+                <viewController id="JD4-dq-l3P" customClass="OrderViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y5I-Ur-fID">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oct-Ad-Yyi">
+                                <rect key="frame" x="20" y="20" width="50" height="22"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="16"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oct-Ad-Yyi" firstAttribute="leading" secondItem="U6D-0P-Fpq" secondAttribute="leading" constant="20" id="0kU-Xj-y2q"/>
+                            <constraint firstItem="oct-Ad-Yyi" firstAttribute="top" secondItem="U6D-0P-Fpq" secondAttribute="top" constant="20" id="2Qk-HC-129"/>
+                            <constraint firstItem="U6D-0P-Fpq" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="oct-Ad-Yyi" secondAttribute="trailing" constant="250" id="8jg-MA-tn5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="U6D-0P-Fpq"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Order" image="Order" selectedImage="Order" id="ZzI-M2-iXR"/>
@@ -84,11 +100,24 @@
         <!--Account-->
         <scene sceneID="Ir7-oj-mXC">
             <objects>
-                <viewController id="LdE-yW-hvP" sceneMemberID="viewController">
+                <viewController id="LdE-yW-hvP" customClass="AccountViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A6e-rd-3Hd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pog-WJ-lDy">
+                                <rect key="frame" x="20" y="20" width="62" height="22"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="16"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pog-WJ-lDy" firstAttribute="leading" secondItem="wzx-I1-dEq" secondAttribute="leading" constant="20" id="IBV-Mv-W4g"/>
+                            <constraint firstItem="Pog-WJ-lDy" firstAttribute="top" secondItem="wzx-I1-dEq" secondAttribute="top" constant="20" id="RmL-Hl-iQd"/>
+                            <constraint firstItem="wzx-I1-dEq" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Pog-WJ-lDy" secondAttribute="trailing" constant="250" id="ViZ-9C-VoU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wzx-I1-dEq"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="Account" selectedImage="Account" id="2vd-rP-TT8"/>
@@ -100,14 +129,17 @@
         <!--Store-->
         <scene sceneID="x2o-8x-PRt">
             <objects>
-                <viewController id="iZr-m5-Gwf" sceneMemberID="viewController">
+                <viewController id="iZr-m5-Gwf" customClass="StoreViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3JI-tk-6a8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DtF-B1-6HF">
-                                <rect key="frame" x="0.0" y="44" width="320" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DtF-B1-6HF">
+                                <rect key="frame" x="0.0" y="62" width="320" height="41"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YMf-jB-a5t"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Preview"/>
                                     <segment title="Category"/>
@@ -132,21 +164,33 @@
                                     <segue destination="WcD-Sx-aSn" kind="embed" id="29w-e5-uQF"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UC9-wm-neA">
+                                <rect key="frame" x="20" y="20" width="50" height="22"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="16"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="78o-KJ-2nA" firstAttribute="leading" secondItem="Yyh-pa-o9E" secondAttribute="leading" id="8dl-gi-Eih"/>
+                            <constraint firstItem="UC9-wm-neA" firstAttribute="leading" secondItem="Yyh-pa-o9E" secondAttribute="leading" constant="20" id="8xU-KO-V38"/>
                             <constraint firstAttribute="bottom" secondItem="78o-KJ-2nA" secondAttribute="bottom" id="CIB-hw-Kjd"/>
                             <constraint firstItem="lJQ-33-lnz" firstAttribute="top" secondItem="Yyh-pa-o9E" secondAttribute="top" id="H1t-sI-wWZ"/>
                             <constraint firstItem="78o-KJ-2nA" firstAttribute="trailing" secondItem="Yyh-pa-o9E" secondAttribute="trailing" id="JI7-t3-aTo"/>
                             <constraint firstAttribute="bottom" secondItem="BcG-1d-pg5" secondAttribute="bottom" id="Kjp-ju-la1"/>
+                            <constraint firstItem="UC9-wm-neA" firstAttribute="top" secondItem="Yyh-pa-o9E" secondAttribute="top" constant="20" id="Lpx-84-ZsM"/>
+                            <constraint firstItem="DtF-B1-6HF" firstAttribute="trailing" secondItem="Yyh-pa-o9E" secondAttribute="trailing" id="NaU-f4-f0W"/>
                             <constraint firstItem="BcG-1d-pg5" firstAttribute="leading" secondItem="Yyh-pa-o9E" secondAttribute="leading" id="S5G-aG-97b"/>
+                            <constraint firstItem="DtF-B1-6HF" firstAttribute="top" secondItem="UC9-wm-neA" secondAttribute="bottom" constant="20" id="Sl5-Hn-Upe"/>
                             <constraint firstItem="BcG-1d-pg5" firstAttribute="top" secondItem="Yyh-pa-o9E" secondAttribute="top" id="W8U-hJ-mgl"/>
                             <constraint firstAttribute="bottom" secondItem="lJQ-33-lnz" secondAttribute="bottom" id="Xea-92-WoO"/>
                             <constraint firstItem="lJQ-33-lnz" firstAttribute="trailing" secondItem="Yyh-pa-o9E" secondAttribute="trailing" id="daa-kU-bOC"/>
                             <constraint firstItem="BcG-1d-pg5" firstAttribute="trailing" secondItem="Yyh-pa-o9E" secondAttribute="trailing" id="p7s-k7-C8v"/>
                             <constraint firstItem="78o-KJ-2nA" firstAttribute="top" secondItem="Yyh-pa-o9E" secondAttribute="top" id="rkI-S5-X1N"/>
                             <constraint firstItem="lJQ-33-lnz" firstAttribute="leading" secondItem="Yyh-pa-o9E" secondAttribute="leading" id="xAd-1z-E5V"/>
+                            <constraint firstItem="DtF-B1-6HF" firstAttribute="leading" secondItem="Yyh-pa-o9E" secondAttribute="leading" id="yOL-MY-s8D"/>
+                            <constraint firstItem="Yyh-pa-o9E" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="UC9-wm-neA" secondAttribute="trailing" constant="250" id="zzL-No-1np"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yyh-pa-o9E"/>
                     </view>
@@ -505,10 +549,10 @@
             </objects>
             <point key="canvasLocation" x="933.75" y="97.183098591549296"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="RvJ-KF-s7X">
             <objects>
-                <viewController id="9Eg-pl-5zE" sceneMemberID="viewController">
+                <viewController id="9Eg-pl-5zE" customClass="MenuViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5yj-Mm-mAZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -518,12 +562,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyj-V8-2Y6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1658" y="2508"/>
+            <point key="canvasLocation" x="161" y="2501"/>
         </scene>
-        <!--View Controller-->
+        <!--Order Detail View Controller-->
+        <scene sceneID="ycu-YG-mP0">
+            <objects>
+                <viewController id="KBy-gF-qRl" customClass="OrderDetailViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SJ7-8T-NIK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oLb-HE-UR8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bo9-1C-ys6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1264" y="2499"/>
+        </scene>
+        <!--Category View Controller-->
         <scene sceneID="baD-PJ-EJa">
             <objects>
-                <viewController id="oyB-G0-sG4" sceneMemberID="viewController">
+                <viewController id="oyB-G0-sG4" customClass="CategoryViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wMq-Ba-wED">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -533,12 +592,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZr-hP-jZY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-827" y="2508"/>
+            <point key="canvasLocation" x="-675" y="2501"/>
         </scene>
-        <!--View Controller-->
+        <!--Preview View Controller-->
         <scene sceneID="BsZ-tP-RN8">
             <objects>
-                <viewController id="WcD-Sx-aSn" sceneMemberID="viewController">
+                <viewController id="WcD-Sx-aSn" customClass="PreviewViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cPE-6A-3WV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -548,7 +607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRo-Sh-ZeE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9" y="2508"/>
+            <point key="canvasLocation" x="-1517" y="2502"/>
         </scene>
     </scenes>
     <resources>

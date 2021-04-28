@@ -24,6 +24,14 @@
 		F084E9142639958400B41276 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9132639958400B41276 /* SessionManager.swift */; };
 		F084E916263995CD00B41276 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E915263995CD00B41276 /* InputValidator.swift */; };
 		F084E9182639ABEA00B41276 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9172639ABEA00B41276 /* SignUpViewController.swift */; };
+		F084E91A2639D4EE00B41276 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9192639D4EE00B41276 /* StoreViewController.swift */; };
+		F084E91C2639D54100B41276 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E91B2639D54100B41276 /* PreviewViewController.swift */; };
+		F084E91E2639D56800B41276 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E91D2639D56800B41276 /* CategoryViewController.swift */; };
+		F084E9202639D58D00B41276 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E91F2639D58D00B41276 /* MenuViewController.swift */; };
+		F084E9222639D63F00B41276 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9212639D63F00B41276 /* OrderViewController.swift */; };
+		F084E9242639D65E00B41276 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9232639D65E00B41276 /* AccountViewController.swift */; };
+		F084E9262639D6A700B41276 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9252639D6A700B41276 /* LaunchViewController.swift */; };
+		F084E9282639D73000B41276 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9272639D73000B41276 /* OrderDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +79,14 @@
 		F084E9132639958400B41276 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		F084E915263995CD00B41276 /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
 		F084E9172639ABEA00B41276 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F084E9192639D4EE00B41276 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		F084E91B2639D54100B41276 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		F084E91D2639D56800B41276 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		F084E91F2639D58D00B41276 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F084E9212639D63F00B41276 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		F084E9232639D65E00B41276 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		F084E9252639D6A700B41276 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		F084E9272639D73000B41276 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
 		F419F776161AD932565F4210 /* Pods-CafeManager-CafeManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager-CafeManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAED2D58ADBFDA5BED6888A5 /* Pods_CafeManager_CafeManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeManager_CafeManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -138,6 +154,7 @@
 		98EEA583262555B7001048A7 /* CafeManager */ = {
 			isa = PBXGroup;
 			children = (
+				F084E9292639D76300B41276 /* TableViewCells */,
 				F084E9122639955800B41276 /* Util */,
 				F0413005263930FC00D4C11B /* Controller */,
 				F0413004263930EC00D4C11B /* Views */,
@@ -205,6 +222,14 @@
 			children = (
 				F084E90E2639896600B41276 /* SignInViewController.swift */,
 				F084E9172639ABEA00B41276 /* SignUpViewController.swift */,
+				F084E9192639D4EE00B41276 /* StoreViewController.swift */,
+				F084E91B2639D54100B41276 /* PreviewViewController.swift */,
+				F084E91D2639D56800B41276 /* CategoryViewController.swift */,
+				F084E91F2639D58D00B41276 /* MenuViewController.swift */,
+				F084E9212639D63F00B41276 /* OrderViewController.swift */,
+				F084E9232639D65E00B41276 /* AccountViewController.swift */,
+				F084E9252639D6A700B41276 /* LaunchViewController.swift */,
+				F084E9272639D73000B41276 /* OrderDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +241,13 @@
 				F084E915263995CD00B41276 /* InputValidator.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		F084E9292639D76300B41276 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,13 +490,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F084E91E2639D56800B41276 /* CategoryViewController.swift in Sources */,
+				F084E91A2639D4EE00B41276 /* StoreViewController.swift in Sources */,
+				F084E9242639D65E00B41276 /* AccountViewController.swift in Sources */,
+				F084E9282639D73000B41276 /* OrderDetailViewController.swift in Sources */,
 				98EEA585262555B7001048A7 /* AppDelegate.swift in Sources */,
 				F084E9182639ABEA00B41276 /* SignUpViewController.swift in Sources */,
+				F084E9262639D6A700B41276 /* LaunchViewController.swift in Sources */,
+				F084E9202639D58D00B41276 /* MenuViewController.swift in Sources */,
 				F084E916263995CD00B41276 /* InputValidator.swift in Sources */,
 				98EEA587262555B7001048A7 /* SceneDelegate.swift in Sources */,
 				F084E91126398E2300B41276 /* EntityModel.swift in Sources */,
 				F084E9142639958400B41276 /* SessionManager.swift in Sources */,
 				F084E90F2639896600B41276 /* SignInViewController.swift in Sources */,
+				F084E91C2639D54100B41276 /* PreviewViewController.swift in Sources */,
+				F084E9222639D63F00B41276 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
