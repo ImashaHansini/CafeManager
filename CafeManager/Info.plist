@@ -62,5 +62,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Segoe Script.ttf</string>
+		<string>Segoe UI.ttf</string>
+	</array>
 </dict>
 </plist>

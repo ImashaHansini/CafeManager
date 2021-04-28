@@ -11,19 +11,19 @@
 		7595D6F1EAFF7858A4FCB161 /* Pods_CafeManager_CafeManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAED2D58ADBFDA5BED6888A5 /* Pods_CafeManager_CafeManagerUITests.framework */; };
 		98EEA585262555B7001048A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EEA584262555B7001048A7 /* AppDelegate.swift */; };
 		98EEA587262555B7001048A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EEA586262555B7001048A7 /* SceneDelegate.swift */; };
-		98EEA589262555B7001048A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EEA588262555B7001048A7 /* ViewController.swift */; };
 		98EEA58C262555B7001048A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98EEA58A262555B7001048A7 /* Main.storyboard */; };
 		98EEA58E262555B9001048A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98EEA58D262555B9001048A7 /* Assets.xcassets */; };
 		98EEA591262555B9001048A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98EEA58F262555B9001048A7 /* LaunchScreen.storyboard */; };
 		98EEA59C262555B9001048A7 /* CafeManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EEA59B262555B9001048A7 /* CafeManagerTests.swift */; };
 		98EEA5A7262555B9001048A7 /* CafeManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EEA5A6262555B9001048A7 /* CafeManagerUITests.swift */; };
 		AAFD83563FEF521BB6A76B88 /* Pods_CafeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 207AC17FBD6A8888CBD47679 /* Pods_CafeManager.framework */; };
-		F04399A5262578C8007A9583 /* Segoe Script.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F04399A0262578C7007A9583 /* Segoe Script.ttf */; };
-		F04399A6262578C8007A9583 /* Segoe UI Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F04399A1262578C7007A9583 /* Segoe UI Bold Italic.ttf */; };
-		F04399A7262578C8007A9583 /* Segoe UI Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F04399A2262578C7007A9583 /* Segoe UI Bold.ttf */; };
-		F04399A8262578C8007A9583 /* Segoe UI Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F04399A3262578C7007A9583 /* Segoe UI Italic.ttf */; };
-		F04399A9262578C8007A9583 /* Segoe UI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F04399A4262578C7007A9583 /* Segoe UI.ttf */; };
+		F04130082639329600D4C11B /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = F04130072639329600D4C11B /* Fonts */; };
 		F07BC8952625CE8600A3B722 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F07BC8942625CE8600A3B722 /* GoogleService-Info.plist */; };
+		F084E90F2639896600B41276 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E90E2639896600B41276 /* SignInViewController.swift */; };
+		F084E91126398E2300B41276 /* EntityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E91026398E2300B41276 /* EntityModel.swift */; };
+		F084E9142639958400B41276 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9132639958400B41276 /* SessionManager.swift */; };
+		F084E916263995CD00B41276 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E915263995CD00B41276 /* InputValidator.swift */; };
+		F084E9182639ABEA00B41276 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9172639ABEA00B41276 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,6 @@
 		98EEA581262555B7001048A7 /* CafeManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98EEA584262555B7001048A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98EEA586262555B7001048A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98EEA588262555B7001048A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98EEA58B262555B7001048A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98EEA58D262555B9001048A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98EEA590262555B9001048A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,12 +64,13 @@
 		CCA31AA4EAC0737CD41B07F4 /* Pods-CafeManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager.debug.xcconfig"; path = "Target Support Files/Pods-CafeManager/Pods-CafeManager.debug.xcconfig"; sourceTree = "<group>"; };
 		D24EE7762AA271629E3A27DD /* Pods-CafeManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager.release.xcconfig"; path = "Target Support Files/Pods-CafeManager/Pods-CafeManager.release.xcconfig"; sourceTree = "<group>"; };
 		E3987D5AFDD17D5FEE7E92DD /* Pods_CafeManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F04399A0262578C7007A9583 /* Segoe Script.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe Script.ttf"; sourceTree = "<group>"; };
-		F04399A1262578C7007A9583 /* Segoe UI Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold Italic.ttf"; sourceTree = "<group>"; };
-		F04399A2262578C7007A9583 /* Segoe UI Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold.ttf"; sourceTree = "<group>"; };
-		F04399A3262578C7007A9583 /* Segoe UI Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Italic.ttf"; sourceTree = "<group>"; };
-		F04399A4262578C7007A9583 /* Segoe UI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI.ttf"; sourceTree = "<group>"; };
+		F04130072639329600D4C11B /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		F07BC8942625CE8600A3B722 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F084E90E2639896600B41276 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F084E91026398E2300B41276 /* EntityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityModel.swift; sourceTree = "<group>"; };
+		F084E9132639958400B41276 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		F084E915263995CD00B41276 /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
+		F084E9172639ABEA00B41276 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F419F776161AD932565F4210 /* Pods-CafeManager-CafeManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager-CafeManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAED2D58ADBFDA5BED6888A5 /* Pods_CafeManager_CafeManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeManager_CafeManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,7 +116,6 @@
 		98EEA578262555B6001048A7 = {
 			isa = PBXGroup;
 			children = (
-				F04399952625747C007A9583 /* Fonts */,
 				98EEA583262555B7001048A7 /* CafeManager */,
 				98EEA59A262555B9001048A7 /* CafeManagerTests */,
 				98EEA5A5262555B9001048A7 /* CafeManagerUITests */,
@@ -139,10 +138,13 @@
 		98EEA583262555B7001048A7 /* CafeManager */ = {
 			isa = PBXGroup;
 			children = (
+				F084E9122639955800B41276 /* Util */,
+				F0413005263930FC00D4C11B /* Controller */,
+				F0413004263930EC00D4C11B /* Views */,
+				F0413003263930D800D4C11B /* Model */,
+				F04130072639329600D4C11B /* Fonts */,
 				98EEA584262555B7001048A7 /* AppDelegate.swift */,
 				98EEA586262555B7001048A7 /* SceneDelegate.swift */,
-				98EEA588262555B7001048A7 /* ViewController.swift */,
-				98EEA58A262555B7001048A7 /* Main.storyboard */,
 				98EEA58D262555B9001048A7 /* Assets.xcassets */,
 				98EEA58F262555B9001048A7 /* LaunchScreen.storyboard */,
 				98EEA592262555B9001048A7 /* Info.plist */,
@@ -182,16 +184,38 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F04399952625747C007A9583 /* Fonts */ = {
+		F0413003263930D800D4C11B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F04399A0262578C7007A9583 /* Segoe Script.ttf */,
-				F04399A1262578C7007A9583 /* Segoe UI Bold Italic.ttf */,
-				F04399A2262578C7007A9583 /* Segoe UI Bold.ttf */,
-				F04399A3262578C7007A9583 /* Segoe UI Italic.ttf */,
-				F04399A4262578C7007A9583 /* Segoe UI.ttf */,
+				F084E91026398E2300B41276 /* EntityModel.swift */,
 			);
-			path = Fonts;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0413004263930EC00D4C11B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98EEA58A262555B7001048A7 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F0413005263930FC00D4C11B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F084E90E2639896600B41276 /* SignInViewController.swift */,
+				F084E9172639ABEA00B41276 /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F084E9122639955800B41276 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F084E9132639958400B41276 /* SessionManager.swift */,
+				F084E915263995CD00B41276 /* InputValidator.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,15 +326,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04399A8262578C8007A9583 /* Segoe UI Italic.ttf in Resources */,
-				F04399A9262578C8007A9583 /* Segoe UI.ttf in Resources */,
+				F04130082639329600D4C11B /* Fonts in Resources */,
 				F07BC8952625CE8600A3B722 /* GoogleService-Info.plist in Resources */,
-				F04399A5262578C8007A9583 /* Segoe Script.ttf in Resources */,
-				F04399A7262578C8007A9583 /* Segoe UI Bold.ttf in Resources */,
 				98EEA591262555B9001048A7 /* LaunchScreen.storyboard in Resources */,
 				98EEA58E262555B9001048A7 /* Assets.xcassets in Resources */,
 				98EEA58C262555B7001048A7 /* Main.storyboard in Resources */,
-				F04399A6262578C8007A9583 /* Segoe UI Bold Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,9 +458,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98EEA589262555B7001048A7 /* ViewController.swift in Sources */,
 				98EEA585262555B7001048A7 /* AppDelegate.swift in Sources */,
+				F084E9182639ABEA00B41276 /* SignUpViewController.swift in Sources */,
+				F084E916263995CD00B41276 /* InputValidator.swift in Sources */,
 				98EEA587262555B7001048A7 /* SceneDelegate.swift in Sources */,
+				F084E91126398E2300B41276 /* EntityModel.swift in Sources */,
+				F084E9142639958400B41276 /* SessionManager.swift in Sources */,
+				F084E90F2639896600B41276 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,7 +683,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CafeManagerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -681,7 +705,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CafeManagerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
