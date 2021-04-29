@@ -9,21 +9,22 @@ import UIKit
 
 class LaunchViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        let sessionMGR = SessionManager()
 
-        // Do any additional setup after loading the view.
+        override func viewDidLoad() {
+            super.viewDidLoad()
+         
+        }
+        
+        override func viewDidAppear(_ animated: Bool) {
+            if sessionMGR.getLoggedState(){
+                 self.performSegue(withIdentifier: "LaunchToHome", sender: nil)
+            }
+            else {
+                self.performSegue(withIdentifier: "LaunchToSignIn", sender: nil)
+                
+            }
+     
+
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
