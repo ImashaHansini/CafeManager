@@ -1,13 +1,13 @@
 //
-//  OrderDetailViewController.swift
+//  OrderDetailsViewController.swift
 //  CafeManager
 //
-//  Created by Imasha on 4/28/21.
+//  Created by Imasha on 4/29/21.
 //
 
 import UIKit
 
-class OrderDetailViewController: UIViewController {
+class OrderDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

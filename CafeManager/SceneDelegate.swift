@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  CafeManager
 //
-//  Created by Ashan Dias on 2021-04-13.
+//  Created by Imasha on 2021-04-13.
 //
 
 import UIKit

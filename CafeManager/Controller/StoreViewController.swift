@@ -8,6 +8,8 @@
 import UIKit
 
 class StoreViewController: UIViewController {
+    
+    var tabBarContainer: UITabBarController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,15 +17,14 @@ class StoreViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "tabBarSegue" {
+            self.tabBarContainer = segue.destination as? UITabBarController
+        }
+        self.tabBarContainer?.tabBar.isHidden = true
     }
-    */
 
+    @IBAction func onSegIndexChanged(_ sender: UISegmentedControl) {
+        tabBarContainer?.selectedIndex = sender.selectedSegmentIndex
+    }
 }
