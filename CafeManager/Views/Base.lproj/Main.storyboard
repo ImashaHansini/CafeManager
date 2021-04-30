@@ -82,7 +82,7 @@
                                 <color key="textColor" red="0.94117647059999998" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jed-Ga-H3w">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jed-Ga-H3w">
                                 <rect key="frame" x="20" y="106.5" width="280" height="402.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
@@ -100,11 +100,14 @@
                                     <segment title="Pending"/>
                                     <segment title="Preparing"/>
                                     <segment title="Ready"/>
-                                    <segment title="Complete"/>
+                                    <segment title="Done"/>
+                                    <segment title="Arrive"/>
+                                    <segment title="Cancel"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" red="0.89411764709999997" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="onSegIndexChanged:" destination="iZr-m5-Gwf" eventType="valueChanged" id="0H4-Ly-ZRz"/>
+                                    <action selector="onStatusSegChanged:" destination="JD4-dq-l3P" eventType="valueChanged" id="h7z-Me-z85"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
@@ -125,6 +128,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Order" image="Order" selectedImage="Order" id="ZzI-M2-iXR"/>
                     <connections>
+                        <outlet property="segTabs" destination="5a4-cB-U1m" id="oP3-Ac-qCb"/>
+                        <outlet property="tblOrders" destination="jed-Ga-H3w" id="Wea-5f-B4F"/>
                         <segue destination="KBy-gF-qRl" kind="presentation" identifier="OrderToViewOrderDetails" modalPresentationStyle="fullScreen" id="zOe-r9-2lm"/>
                     </connections>
                 </viewController>

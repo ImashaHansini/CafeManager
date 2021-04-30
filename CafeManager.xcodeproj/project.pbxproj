@@ -37,6 +37,12 @@
 		F0D655B3263C21800067F5E4 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D655B2263C21800067F5E4 /* ImageFetcher.swift */; };
 		F0D655B6263C3ACF0067F5E4 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D655B4263C3ACF0067F5E4 /* CategoryCollectionViewCell.swift */; };
 		F0D655B7263C3ACF0067F5E4 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D655B5263C3ACF0067F5E4 /* CategoryCollectionViewCell.xib */; };
+		F0D655BA263C46260067F5E4 /* FoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D655B8263C46260067F5E4 /* FoodItemTableViewCell.swift */; };
+		F0D655BB263C46260067F5E4 /* FoodItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D655B9263C46260067F5E4 /* FoodItemTableViewCell.xib */; };
+		F0D655BE263C57DD0067F5E4 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D655BC263C57DD0067F5E4 /* OrderTableViewCell.swift */; };
+		F0D655BF263C57DD0067F5E4 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D655BD263C57DD0067F5E4 /* OrderTableViewCell.xib */; };
+		F0D655C2263C60140067F5E4 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D655C0263C60140067F5E4 /* AccountTableViewCell.swift */; };
+		F0D655C3263C60140067F5E4 /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D655C1263C60140067F5E4 /* AccountTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +103,12 @@
 		F0D655B2263C21800067F5E4 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 		F0D655B4263C3ACF0067F5E4 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		F0D655B5263C3ACF0067F5E4 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		F0D655B8263C46260067F5E4 /* FoodItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewCell.swift; sourceTree = "<group>"; };
+		F0D655B9263C46260067F5E4 /* FoodItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodItemTableViewCell.xib; sourceTree = "<group>"; };
+		F0D655BC263C57DD0067F5E4 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		F0D655BD263C57DD0067F5E4 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		F0D655C0263C60140067F5E4 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		F0D655C1263C60140067F5E4 /* AccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountTableViewCell.xib; sourceTree = "<group>"; };
 		F419F776161AD932565F4210 /* Pods-CafeManager-CafeManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager-CafeManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAED2D58ADBFDA5BED6888A5 /* Pods_CafeManager_CafeManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeManager_CafeManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -261,6 +273,12 @@
 				F0D655AF263C0C2D0067F5E4 /* CategoryInfoTableViewCell.xib */,
 				F0D655B4263C3ACF0067F5E4 /* CategoryCollectionViewCell.swift */,
 				F0D655B5263C3ACF0067F5E4 /* CategoryCollectionViewCell.xib */,
+				F0D655B8263C46260067F5E4 /* FoodItemTableViewCell.swift */,
+				F0D655B9263C46260067F5E4 /* FoodItemTableViewCell.xib */,
+				F0D655BC263C57DD0067F5E4 /* OrderTableViewCell.swift */,
+				F0D655BD263C57DD0067F5E4 /* OrderTableViewCell.xib */,
+				F0D655C0263C60140067F5E4 /* AccountTableViewCell.swift */,
+				F0D655C1263C60140067F5E4 /* AccountTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -374,9 +392,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F04130082639329600D4C11B /* Fonts in Resources */,
+				F0D655C3263C60140067F5E4 /* AccountTableViewCell.xib in Resources */,
 				F0D655B7263C3ACF0067F5E4 /* CategoryCollectionViewCell.xib in Resources */,
 				98EEA591262555B9001048A7 /* LaunchScreen.storyboard in Resources */,
+				F0D655BF263C57DD0067F5E4 /* OrderTableViewCell.xib in Resources */,
 				F0D655AD263C07DD0067F5E4 /* GoogleService-Info.plist in Resources */,
+				F0D655BB263C46260067F5E4 /* FoodItemTableViewCell.xib in Resources */,
 				F0D655B1263C0C2D0067F5E4 /* CategoryInfoTableViewCell.xib in Resources */,
 				98EEA58E262555B9001048A7 /* Assets.xcassets in Resources */,
 				98EEA58C262555B7001048A7 /* Main.storyboard in Resources */,
@@ -513,16 +534,19 @@
 				F0D655B3263C21800067F5E4 /* ImageFetcher.swift in Sources */,
 				F0D655B6263C3ACF0067F5E4 /* CategoryCollectionViewCell.swift in Sources */,
 				98EEA585262555B7001048A7 /* AppDelegate.swift in Sources */,
+				F0D655BE263C57DD0067F5E4 /* OrderTableViewCell.swift in Sources */,
 				F084E9182639ABEA00B41276 /* SignUpViewController.swift in Sources */,
 				F084E9262639D6A700B41276 /* LaunchViewController.swift in Sources */,
 				F084E9202639D58D00B41276 /* MenuViewController.swift in Sources */,
 				F0D655B0263C0C2D0067F5E4 /* CategoryInfoTableViewCell.swift in Sources */,
 				F084E916263995CD00B41276 /* InputValidator.swift in Sources */,
+				F0D655BA263C46260067F5E4 /* FoodItemTableViewCell.swift in Sources */,
 				F03DD56A263AFBC700FBBEA8 /* OrderDetailsViewController.swift in Sources */,
 				98EEA587262555B7001048A7 /* SceneDelegate.swift in Sources */,
 				F084E91126398E2300B41276 /* EntityModel.swift in Sources */,
 				F084E9142639958400B41276 /* SessionManager.swift in Sources */,
 				F084E90F2639896600B41276 /* SignInViewController.swift in Sources */,
+				F0D655C2263C60140067F5E4 /* AccountTableViewCell.swift in Sources */,
 				F084E91C2639D54100B41276 /* PreviewViewController.swift in Sources */,
 				F084E9222639D63F00B41276 /* OrderViewController.swift in Sources */,
 			);

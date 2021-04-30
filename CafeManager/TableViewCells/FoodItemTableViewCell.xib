@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FoodItemTableViewCell" customModule="CafeManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0N-tG-QGt">
+                        <rect key="frame" x="0.0" y="10" width="320" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QC3-yp-Ux4">
+                                <rect key="frame" x="10" y="15" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DEA-mL-K3D"/>
+                                    <constraint firstAttribute="width" constant="50" id="ykD-Fq-YtU"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bF6-cn-f4l">
+                                <rect key="frame" x="70" y="18.5" width="181" height="43"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuh-HV-kMa">
+                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
+                                        <color key="textColor" red="0.2901960784" green="0.22352941179999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YU3-wC-Ur7">
+                                        <rect key="frame" x="0.0" y="27" width="91" height="16"/>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                                        <color key="textColor" red="0.2901960784" green="0.22352941179999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="w4v-Zs-0EM">
+                                <rect key="frame" x="261" y="12.5" width="49" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y2-N6-7vH">
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="16"/>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                                        <color key="textColor" red="0.2901960784" green="0.22352941179999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMx-h2-l8O">
+                                        <rect key="frame" x="0.0" y="24" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.94117647059999998" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="thumbTintColor" red="0.89411764709999997" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="onFoodStatusChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="UrL-TB-jD0"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="w4v-Zs-0EM" firstAttribute="leading" secondItem="bF6-cn-f4l" secondAttribute="trailing" constant="10" id="5X3-CL-2UX"/>
+                            <constraint firstAttribute="trailing" secondItem="w4v-Zs-0EM" secondAttribute="trailing" constant="10" id="Bdm-6G-DcF"/>
+                            <constraint firstItem="QC3-yp-Ux4" firstAttribute="centerY" secondItem="N0N-tG-QGt" secondAttribute="centerY" id="D91-FO-TXr"/>
+                            <constraint firstItem="bF6-cn-f4l" firstAttribute="centerY" secondItem="N0N-tG-QGt" secondAttribute="centerY" id="I30-1Y-ZYS"/>
+                            <constraint firstItem="w4v-Zs-0EM" firstAttribute="centerY" secondItem="N0N-tG-QGt" secondAttribute="centerY" id="IVx-dN-Dte"/>
+                            <constraint firstItem="QC3-yp-Ux4" firstAttribute="leading" secondItem="N0N-tG-QGt" secondAttribute="leading" constant="10" id="t0Q-4l-HxS"/>
+                            <constraint firstItem="bF6-cn-f4l" firstAttribute="leading" secondItem="QC3-yp-Ux4" secondAttribute="trailing" constant="10" id="w0a-rM-Ds7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="N0N-tG-QGt" secondAttribute="trailing" id="Acy-Fv-jNE"/>
+                    <constraint firstItem="N0N-tG-QGt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NJX-OI-FU4"/>
+                    <constraint firstItem="N0N-tG-QGt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="eio-G5-cZl"/>
+                    <constraint firstAttribute="bottom" secondItem="N0N-tG-QGt" secondAttribute="bottom" constant="10" id="wxf-mt-Gz9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgFood" destination="QC3-yp-Ux4" id="trQ-Im-DzI"/>
+                <outlet property="lblDescription" destination="YU3-wC-Ur7" id="iN2-NZ-2Fl"/>
+                <outlet property="lblDiscount" destination="7Y2-N6-7vH" id="u0i-Zs-5VO"/>
+                <outlet property="lblFoodName" destination="fuh-HV-kMa" id="FvW-yh-EPQ"/>
+                <outlet property="switchFoodStatus" destination="OMx-h2-l8O" id="guH-Bx-IlG"/>
+            </connections>
+            <point key="canvasLocation" x="73.913043478260875" y="133.92857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
