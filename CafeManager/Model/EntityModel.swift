@@ -22,6 +22,7 @@ struct FoodItem{
     var discount: Int
     var image: String
     var category: String
+    var isActive: Bool
 }
 
 struct Order {
@@ -29,4 +30,9 @@ struct Order {
     var orderStatus: String = ""
     var orderTotal: Double = 0
 }
+
+struct Category {
+    var categoryID: String
+    var categoryName: String
+    }
 

@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>772543834261-0h57uue9rceltfg7hol60bgj2v49vp6d.apps.googleusercontent.com</string>
+	<string>822416721584-pu9732b99bgu02enatt33p17urgap5nf.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.772543834261-0h57uue9rceltfg7hol60bgj2v49vp6d</string>
+	<string>com.googleusercontent.apps.822416721584-pu9732b99bgu02enatt33p17urgap5nf</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAetKPkoiFdQuNpWb_Z5EEvqRTlOuyg5jE</string>
+	<string>AIzaSyB77ZSpb6hIP2BKhZVuOiSTggJxmxKzdy4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>772543834261</string>
+	<string>822416721584</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.imasha.CafeManager</string>
 	<key>PROJECT_ID</key>
-	<string>cafemanager-cb7b2</string>
+	<string>cafenibm-826db</string>
 	<key>STORAGE_BUCKET</key>
-	<string>cafemanager-cb7b2.appspot.com</string>
+	<string>cafenibm-826db.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:772543834261:ios:d650ddf3d8c50c26d4939c</string>
+	<string>1:822416721584:ios:851538192cb03cc5a09d75</string>
+	<key>DATABASE_URL</key>
+	<string>https://cafenibm-826db-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

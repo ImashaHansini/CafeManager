@@ -19,7 +19,6 @@
 		AAFD83563FEF521BB6A76B88 /* Pods_CafeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 207AC17FBD6A8888CBD47679 /* Pods_CafeManager.framework */; };
 		F03DD56A263AFBC700FBBEA8 /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03DD569263AFBC700FBBEA8 /* OrderDetailsViewController.swift */; };
 		F04130082639329600D4C11B /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = F04130072639329600D4C11B /* Fonts */; };
-		F07BC8952625CE8600A3B722 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F07BC8942625CE8600A3B722 /* GoogleService-Info.plist */; };
 		F084E90F2639896600B41276 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E90E2639896600B41276 /* SignInViewController.swift */; };
 		F084E91126398E2300B41276 /* EntityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E91026398E2300B41276 /* EntityModel.swift */; };
 		F084E9142639958400B41276 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9132639958400B41276 /* SessionManager.swift */; };
@@ -32,6 +31,12 @@
 		F084E9222639D63F00B41276 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9212639D63F00B41276 /* OrderViewController.swift */; };
 		F084E9242639D65E00B41276 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9232639D65E00B41276 /* AccountViewController.swift */; };
 		F084E9262639D6A700B41276 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084E9252639D6A700B41276 /* LaunchViewController.swift */; };
+		F0D655AD263C07DD0067F5E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0D655AC263C07DD0067F5E4 /* GoogleService-Info.plist */; };
+		F0D655B0263C0C2D0067F5E4 /* CategoryInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D655AE263C0C2D0067F5E4 /* CategoryInfoTableViewCell.swift */; };
+		F0D655B1263C0C2D0067F5E4 /* CategoryInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D655AF263C0C2D0067F5E4 /* CategoryInfoTableViewCell.xib */; };
+		F0D655B3263C21800067F5E4 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D655B2263C21800067F5E4 /* ImageFetcher.swift */; };
+		F0D655B6263C3ACF0067F5E4 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D655B4263C3ACF0067F5E4 /* CategoryCollectionViewCell.swift */; };
+		F0D655B7263C3ACF0067F5E4 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D655B5263C3ACF0067F5E4 /* CategoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +79,6 @@
 		E3987D5AFDD17D5FEE7E92DD /* Pods_CafeManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03DD569263AFBC700FBBEA8 /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
 		F04130072639329600D4C11B /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
-		F07BC8942625CE8600A3B722 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F084E90E2639896600B41276 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F084E91026398E2300B41276 /* EntityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityModel.swift; sourceTree = "<group>"; };
 		F084E9132639958400B41276 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
@@ -87,6 +91,12 @@
 		F084E9212639D63F00B41276 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		F084E9232639D65E00B41276 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		F084E9252639D6A700B41276 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		F0D655AC263C07DD0067F5E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F0D655AE263C0C2D0067F5E4 /* CategoryInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfoTableViewCell.swift; sourceTree = "<group>"; };
+		F0D655AF263C0C2D0067F5E4 /* CategoryInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryInfoTableViewCell.xib; sourceTree = "<group>"; };
+		F0D655B2263C21800067F5E4 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		F0D655B4263C3ACF0067F5E4 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		F0D655B5263C3ACF0067F5E4 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		F419F776161AD932565F4210 /* Pods-CafeManager-CafeManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager-CafeManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAED2D58ADBFDA5BED6888A5 /* Pods_CafeManager_CafeManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeManager_CafeManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -154,6 +164,7 @@
 		98EEA583262555B7001048A7 /* CafeManager */ = {
 			isa = PBXGroup;
 			children = (
+				F0D655AC263C07DD0067F5E4 /* GoogleService-Info.plist */,
 				F084E9292639D76300B41276 /* TableViewCells */,
 				F084E9122639955800B41276 /* Util */,
 				F0413005263930FC00D4C11B /* Controller */,
@@ -165,7 +176,6 @@
 				98EEA58D262555B9001048A7 /* Assets.xcassets */,
 				98EEA58F262555B9001048A7 /* LaunchScreen.storyboard */,
 				98EEA592262555B9001048A7 /* Info.plist */,
-				F07BC8942625CE8600A3B722 /* GoogleService-Info.plist */,
 			);
 			path = CafeManager;
 			sourceTree = "<group>";
@@ -239,6 +249,7 @@
 			children = (
 				F084E9132639958400B41276 /* SessionManager.swift */,
 				F084E915263995CD00B41276 /* InputValidator.swift */,
+				F0D655B2263C21800067F5E4 /* ImageFetcher.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -246,6 +257,10 @@
 		F084E9292639D76300B41276 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				F0D655AE263C0C2D0067F5E4 /* CategoryInfoTableViewCell.swift */,
+				F0D655AF263C0C2D0067F5E4 /* CategoryInfoTableViewCell.xib */,
+				F0D655B4263C3ACF0067F5E4 /* CategoryCollectionViewCell.swift */,
+				F0D655B5263C3ACF0067F5E4 /* CategoryCollectionViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -359,8 +374,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F04130082639329600D4C11B /* Fonts in Resources */,
-				F07BC8952625CE8600A3B722 /* GoogleService-Info.plist in Resources */,
+				F0D655B7263C3ACF0067F5E4 /* CategoryCollectionViewCell.xib in Resources */,
 				98EEA591262555B9001048A7 /* LaunchScreen.storyboard in Resources */,
+				F0D655AD263C07DD0067F5E4 /* GoogleService-Info.plist in Resources */,
+				F0D655B1263C0C2D0067F5E4 /* CategoryInfoTableViewCell.xib in Resources */,
 				98EEA58E262555B9001048A7 /* Assets.xcassets in Resources */,
 				98EEA58C262555B7001048A7 /* Main.storyboard in Resources */,
 			);
@@ -493,10 +510,13 @@
 				F084E91E2639D56800B41276 /* CategoryViewController.swift in Sources */,
 				F084E91A2639D4EE00B41276 /* StoreViewController.swift in Sources */,
 				F084E9242639D65E00B41276 /* AccountViewController.swift in Sources */,
+				F0D655B3263C21800067F5E4 /* ImageFetcher.swift in Sources */,
+				F0D655B6263C3ACF0067F5E4 /* CategoryCollectionViewCell.swift in Sources */,
 				98EEA585262555B7001048A7 /* AppDelegate.swift in Sources */,
 				F084E9182639ABEA00B41276 /* SignUpViewController.swift in Sources */,
 				F084E9262639D6A700B41276 /* LaunchViewController.swift in Sources */,
 				F084E9202639D58D00B41276 /* MenuViewController.swift in Sources */,
+				F0D655B0263C0C2D0067F5E4 /* CategoryInfoTableViewCell.swift in Sources */,
 				F084E916263995CD00B41276 /* InputValidator.swift in Sources */,
 				F03DD56A263AFBC700FBBEA8 /* OrderDetailsViewController.swift in Sources */,
 				98EEA587262555B7001048A7 /* SceneDelegate.swift in Sources */,
