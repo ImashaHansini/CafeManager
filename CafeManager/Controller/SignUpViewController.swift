@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import NotificationBannerSwift
+import ProgressHUD
 
 class SignUpViewController: UIViewController {
 
@@ -21,7 +22,8 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
-
+        ProgressHUD.animationType = .multipleCircleScaleRipple
+        ProgressHUD.colorAnimation = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         // Do any additional setup after loading the view.
     }
     
@@ -75,7 +77,7 @@ class SignUpViewController: UIViewController {
         }
         
         func saveUserdata(user: User) {
-            
+            ProgressHUD.show("Loading!")
             let userData = [
                 "userName" : user.userName,
                 "userEmail" : user.userEmail,
@@ -87,16 +89,16 @@ class SignUpViewController: UIViewController {
                 .child(user.userEmail
                     .replacingOccurrences(of: "@", with: "_")
                     .replacingOccurrences(of: ".", with: "_")).setValue(userData) {
-            (error, ref) in
-                
-                if let err = error {
-                    print(err.localizedDescription)
-                    let banner = NotificationBanner(title: "Error", subtitle: "User data not saved on database!", style: .danger)
-                    banner.show()
-                    return
-                }
-                
-                let banner = NotificationBanner(title: "Done", subtitle: "User data saved on database!", style: .success)
+                        (error, ref) in
+                        ProgressHUD.dismiss()
+                        if let err = error {
+                            print(err.localizedDescription)
+                            let banner = NotificationBanner(title: "Error", subtitle: "User data not saved on database!", style: .danger)
+                            banner.show()
+                            return
+                        }
+                        
+                        let banner = NotificationBanner(title: "Done", subtitle: "User data saved on database!", style: .success)
                         banner.show(queuePosition: .front)
                         self.dismiss(animated: true, completion: nil)
             }

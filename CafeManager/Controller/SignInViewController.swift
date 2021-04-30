@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import NotificationBannerSwift
+import ProgressHUD
 
 class SignInViewController: UIViewController {
 
@@ -19,17 +20,19 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
+        ProgressHUD.animationType = .multipleCircleScaleRipple
+        ProgressHUD.colorAnimation = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
     }
 
     @IBAction func onSignInPressed(_ sender: UIButton) {
         
-       if InputValidator.isValidEmail(email: txtEmail.text ?? "") {
+       if !InputValidator.isValidEmail(email: txtEmail.text ?? "") {
             let banner = NotificationBanner(title: "Error Signing In", subtitle: "Please enter a valid Email address", style: .danger)
             banner.show()
             return
         }
         
-       if InputValidator.isValidPassword(pass: txtPassword.text ?? "", minLength: 6, maxLength: 50) {
+       if !InputValidator.isValidPassword(pass: txtPassword.text ?? "", minLength: 6, maxLength: 50) {
             let banner = NotificationBanner(title: "Error Signing In", subtitle: "Please enter a valid Password", style: .danger)
             banner.show()
             return
@@ -60,12 +63,13 @@ class SignInViewController: UIViewController {
     }
     
     func getUserData(email: String) {
+        ProgressHUD.show("Loading!")
         ref.child("users")
         .child(email
         .replacingOccurrences(of: "@", with: "_")
             .replacingOccurrences(of: ".", with: "_")).observe(.value,with: {
                 (snapshot) in
-                
+                ProgressHUD.dismiss()
                 if snapshot.hasChildren() {
                     if let data = snapshot.value {
                         if let userData = data as? [String: String] {

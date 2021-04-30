@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,17 +31,17 @@
                                 <color key="textColor" red="0.2901960784" green="0.22352941179999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="171" translatesAutoresizingMaskIntoConstraints="NO" id="cA8-ft-cxS">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="cA8-ft-cxS">
                                 <rect key="frame" x="10" y="31" width="300" height="16"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKf-Po-Feg">
-                                        <rect key="frame" x="0.0" y="0.0" width="105.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKf-Po-Feg">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="16"/>
                                         <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="12"/>
                                         <color key="textColor" red="0.2901960784" green="0.22352941179999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="QTY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXq-df-KQR">
-                                        <rect key="frame" x="276.5" y="0.0" width="23.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QTY" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXq-df-KQR">
+                                        <rect key="frame" x="170" y="0.0" width="130" height="16"/>
                                         <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="12"/>
                                         <color key="textColor" red="0.2901960784" green="0.22352941179999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -48,8 +49,8 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBd-Ff-tCh">
-                                <rect key="frame" x="246" y="52" width="64" height="16"/>
-                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="12"/>
+                                <rect key="frame" x="235.5" y="51" width="74.5" height="19"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="14"/>
                                 <color key="textColor" red="0.2901960784" green="0.22352941179999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -58,12 +59,17 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="cA8-ft-cxS" secondAttribute="trailing" constant="10" id="1mY-J5-uQK"/>
                             <constraint firstItem="cA8-ft-cxS" firstAttribute="top" secondItem="lz6-Tz-TdP" secondAttribute="bottom" constant="5" id="86z-NH-VgZ"/>
+                            <constraint firstAttribute="bottom" secondItem="pBd-Ff-tCh" secondAttribute="bottom" constant="10" id="K13-UJ-fhk"/>
                             <constraint firstItem="cA8-ft-cxS" firstAttribute="leading" secondItem="gDK-Is-dml" secondAttribute="leading" constant="10" id="PxU-As-djp"/>
-                            <constraint firstItem="pBd-Ff-tCh" firstAttribute="top" secondItem="cA8-ft-cxS" secondAttribute="bottom" constant="5" id="Zk9-4l-AiR"/>
                             <constraint firstAttribute="trailing" secondItem="pBd-Ff-tCh" secondAttribute="trailing" constant="10" id="fda-X9-V31"/>
                             <constraint firstItem="lz6-Tz-TdP" firstAttribute="leading" secondItem="gDK-Is-dml" secondAttribute="leading" constant="10" id="nLM-J9-8CQ"/>
                             <constraint firstItem="lz6-Tz-TdP" firstAttribute="top" secondItem="gDK-Is-dml" secondAttribute="top" constant="10" id="nq0-1b-fgc"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>

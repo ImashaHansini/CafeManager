@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 import FirebaseStorage
 import NotificationBannerSwift
+import ProgressHUD
 
 class MenuViewController: UIViewController {
 
@@ -29,16 +30,18 @@ class MenuViewController: UIViewController {
        var imagePicker: ImagePicker!
        
        override func viewDidLoad() {
-           super.viewDidLoad()
-           self.imagePicker = ImagePicker(presentationController: self, delegate: self)
-           let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.onPickImageClicked))
-           self.imgFood.isUserInteractionEnabled = true
-           self.imgFood.addGestureRecognizer(gesture)
-           self.refreshCategories()
+            super.viewDidLoad()
+            self.imagePicker = ImagePicker(presentationController: self, delegate: self)
+            let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.onPickImageClicked))
+            self.imgFood.isUserInteractionEnabled = true
+            self.imgFood.addGestureRecognizer(gesture)
+            ProgressHUD.animationType = .multipleCircleScaleRipple
+            ProgressHUD.colorAnimation = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+            self.refreshCategories()
        }
     
     @IBAction func onAddFoodPressed(_ sender: UIButton) {
-   let foodItem = FoodItem(
+        let foodItem = FoodItem(
                     _id: "",
                     foodName: txtFoodName.text ?? "",
                     foodDescription: txtDescription.text ?? "",
@@ -49,17 +52,17 @@ class MenuViewController: UIViewController {
                     isActive: true)
                 
                 self.addFoodItem(foodItem: foodItem)
-            }
-            
-            @objc func onPickImageClicked(_ sender: UIImageView){
-                self.imagePicker.present(from: sender)
-            }
         }
+        
+        @objc func onPickImageClicked(_ sender: UIImageView) {
+            self.imagePicker.present(from: sender)
+        }
+    }
 
         extension MenuViewController {
             
             func addFoodItem(foodItem: FoodItem) {
-                
+                ProgressHUD.show("Please Wait!")
                 guard let image = self.selectedImage else {
                     let banner = NotificationBanner(title: "Error Saving Data", subtitle: "Please add an Image", style: .danger)
                     banner.show()
@@ -73,7 +76,7 @@ class MenuViewController: UIViewController {
                     
                     Storage.storage().reference().child("foodItemImages").child(foodItem.foodName).putData(uploadData, metadata: metaData) {
                         meta, error in
-                        
+                        ProgressHUD.dismiss()
                         if let error = error {
                             print(error.localizedDescription)
                             let banner = NotificationBanner(title: "Error Uploading Image", subtitle: error.localizedDescription, style: .danger)

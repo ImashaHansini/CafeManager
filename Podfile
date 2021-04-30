@@ -12,6 +12,7 @@ target 'CafeManager' do
  pod 'Firebase/Storage'
  pod 'NotificationBannerSwift'
  pod 'Kingfisher', '~> 6.0.0'
+ pod 'ProgressHUD'
  
 
   target 'CafeManagerTests' do

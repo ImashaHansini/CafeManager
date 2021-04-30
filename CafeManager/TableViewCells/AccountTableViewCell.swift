@@ -15,11 +15,11 @@ class AccountTableViewCell: UITableViewCell {
     @IBOutlet weak var lblOrderTotal: UILabel!
     
    class var reuseIdentifier: String {
-            return "OrderSummaryCellReusable"
+            return "AccountCellReusable"
         }
         
         class var nibName: String {
-            return "OrderSummaryTableViewCell"
+            return "AccountTableViewCell"
         }
         
         override func awakeFromNib() {

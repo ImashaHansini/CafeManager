@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import NotificationBannerSwift
+import ProgressHUD
 
 class PreviewViewController: UIViewController {
 
@@ -25,6 +26,9 @@ class PreviewViewController: UIViewController {
         
         override func viewDidLoad() {
             super.viewDidLoad()
+            
+            ProgressHUD.animationType = .multipleCircleScaleRipple
+            ProgressHUD.colorAnimation = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
             
             let collectionViewNib = UINib(nibName: CategoryCollectionViewCell.nibName, bundle: nil)
             collectionViewCategories.register(collectionViewNib, forCellWithReuseIdentifier: CategoryCollectionViewCell.reuseIdentifier)
@@ -90,13 +94,16 @@ class PreviewViewController: UIViewController {
         }
         
         func refreshFood() {
+            ProgressHUD.show("Loading Food!")
             foodItemList.removeAll()
             filteredFood.removeAll()
+            tblFoodItems.reloadData()
             
             databaseReference
                 .child("foodItems")
                 .observeSingleEvent(of: .value, with: {
                     snapshot in
+                    ProgressHUD.dismiss()
                     if snapshot.hasChildren() {
                         guard let data = snapshot.value as? [String: Any] else {
                             NSLog("Could not parse data")
